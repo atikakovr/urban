@@ -8,7 +8,6 @@ async def root():
 	return "Главная страница"
 
 
-
 @app.get("/user/admin")
 async def admin_panel():
 	return "Вы вошли как администратор"
