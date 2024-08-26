@@ -23,6 +23,3 @@ async def users_id(user_id):
 	return f"Вы вошли как пользователь № {user_id}"
 
 
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-	return {"message": f"Hello {name}"}
