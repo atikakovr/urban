@@ -8,10 +8,6 @@ async def root():
 	return "Главная страница"
 
 
-@app.get("/user")
-async def user_info(username: str = 'Alex', age: int = 54):
-	return {"User": username, "age": age}
-
 
 @app.get("/user/admin")
 async def admin_panel():
@@ -22,4 +18,8 @@ async def admin_panel():
 async def users_id(user_id):
 	return f"Вы вошли как пользователь № {user_id}"
 
+
+@app.get("/user")
+async def user_info(username: str = 'Alex', age: int = 54):
+	return {"User": username, "age": age}
 
